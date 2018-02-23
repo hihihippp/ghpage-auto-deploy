@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-  - "6"
+  - stable
 
 before_install:
 # DONT SETUP GH_TOKEN here, set it in Travis to avoid the security issue
 # git setup
   - git config --global push.default matching
-  - git config --global user.name "gasolin via Travis CI"
-  - git config --global user.email "gasolin@gmail.com"
+  - git config --global user.name "hihihippp"
+  - git config --global user.email "liuzhangang@gmail.com"
 # github user name
-  - export ACCOUNT=gasolin
+  - export ACCOUNT=hihihippp
 # github project name
   - export REPO=ghpage-auto-deploy
 # the folder that will be upload to gh-page
@@ -18,7 +18,7 @@ before_install:
   - export BRANCH=gh-pages
 # check /usr/share/zoneinfo/ for valid timezone
 # used in auto commit message
-  - export TIMEZONE=Asia/Taipei
+  - export TIMEZONE=Asia/Shanghai
 
 install:
   - npm install
