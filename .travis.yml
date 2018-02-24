@@ -28,9 +28,6 @@ script:
   - rm -Rf build
   - mkdir build
   - cp index.html build/
-  - cp -r js build/
-  - cp -r css build/
-  - cp -r asciinema-cast build/
 # deploy via travis
 # check details on https://github.com/gasolin/ghpage-auto-deploy
   - ./deploy.sh
